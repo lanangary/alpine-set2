@@ -1,0 +1,65 @@
+# Ignore everything
+*
+
+# Un-ignore wp-content directory
+!wp-content/
+
+# Un-ignore themes directory
+!wp-content/themes/
+
+# Un-ignore hello-elementor theme
+!wp-content/themes/hello-elementor/
+!wp-content/themes/hello-elementor/**
+
+# Un-ignore mu-plugins directory
+!wp-content/mu-plugins/
+!wp-content/mu-plugins/**
+
+# Un-ignore plugins directory
+!wp-content/plugins/
+
+# Un-ignore yourpropfirm plugin
+!wp-content/plugins/yourpropfirm/
+!wp-content/plugins/yourpropfirm/**
+
+# Un-ignore yourpropfirm-orders-checker plugin
+!wp-content/plugins/yourpropfirm-orders-checker/
+!wp-content/plugins/yourpropfirm-orders-checker/**
+
+# Handle staging directory
+!staging/
+!staging/wp-content/
+!staging/wp-content/themes/
+!staging/wp-content/themes/hello-elementor/
+!staging/wp-content/themes/hello-elementor/**
+!staging/wp-content/mu-plugins/
+!staging/wp-content/mu-plugins/**
+!staging/wp-content/plugins/
+!staging/wp-content/plugins/yourpropfirm/
+!staging/wp-content/plugins/yourpropfirm/**
+!staging/wp-content/plugins/yourpropfirm-orders-checker/
+!staging/wp-content/plugins/yourpropfirm-orders-checker/**
+
+# Handle beta directory
+!beta/
+!beta/wp-content/
+!beta/wp-content/themes/
+!beta/wp-content/themes/hello-elementor/
+!beta/wp-content/themes/hello-elementor/**
+!beta/wp-content/mu-plugins/
+!beta/wp-content/mu-plugins/**
+!beta/wp-content/plugins/
+!beta/wp-content/plugins/yourpropfirm/
+!beta/wp-content/plugins/yourpropfirm/**
+!beta/wp-content/plugins/yourpropfirm-orders-checker/
+!beta/wp-content/plugins/yourpropfirm-orders-checker/**
+
+# Un-ignore .gitignore itself
+!.gitignore
+
+# Un-ignore root WordPress files (optional - adjust as needed)
+!.htaccess
+!wp-config.php
+!index.php
+!readme.html
+!license.txt

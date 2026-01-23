@@ -1,0 +1,104 @@
+/* 
+ * Custom styles for Public Style.
+ *
+ * For additional information on potential customization options,
+ * read the developers' documentation:
+ *
+ * @package yourpropfirm
+ */
+
+/* Add your custom CSS here */
+.yourpropfirm_mt_version abbr[title] {
+    text-decoration: none!important;
+}
+.yourpropfirm_mt_version_field_radio_wrapper{
+	margin-left: 3px;
+}
+.ypf_mt_version_radio_option {
+	background: #fff;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    align-items: center;
+    padding: 0px!important;
+    margin: 10px 0px 0px 0px!important;
+}
+.ypf_mt_version_radio_option .field-group {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    width: 45%;
+    padding: 10px 0px;
+}
+
+/* Image styling with a consistent size */
+.ypf_mt_version_radio_option .field-group img {
+    margin-right: 10px;
+    max-height: 40px;
+}
+
+/* Label and text alignment */
+.ypf_mt_version_radio_option .field-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.ypf_mt_version_radio_option .field-group span{
+	display: none;
+}
+
+/*YPF Popup*/
+.ypf-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.ypf-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.ypf-ok-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--tripleaColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ypf-ok-button:hover {
+    background-color: #0056b3;
+}
+
+/**/
+
+@media (max-width: 576px) {
+.ypf_mt_version_radio_option .field-group {
+    padding: 10px 0px 0px 0px!important;
+}
+.ypf_mt_version_radio_option .field-group label {
+    padding: 10px 0px 0px 0px;
+}
+.ypf_mt_version_radio_option .field-group img {
+    height: 20px!important;
+}
+}
