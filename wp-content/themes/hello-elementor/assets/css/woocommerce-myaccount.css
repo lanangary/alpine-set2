@@ -1,0 +1,655 @@
+/* WooCommerce MyAccount Navigation Styling */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	background: #f8f9fa;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 0;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #e9ecef;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li:last-child {
+	border-bottom: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+	display: block;
+	padding: 15px 20px;
+	color: #333;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover {
+	background-color: #e9ecef;
+	color: #017FDD;
+	padding-left: 25px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+	background-color: #017FDD;
+	color: #fff;
+	font-weight: 600;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a:hover {
+	background-color: #0166B0;
+	padding-left: 20px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 0px;
+	background-color: #fff;
+}
+
+/* WooCommerce MyAccount Content Styling */
+.woocommerce-account .woocommerce-MyAccount-content {
+	background: #fff;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 30px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-account .woocommerce-MyAccount-content h2,
+.woocommerce-account .woocommerce-MyAccount-content h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #333;
+	font-weight: 600;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content h2 {
+	font-size: 28px;
+	border-bottom: 2px solid #e9ecef;
+	padding-bottom: 15px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content h3 {
+	font-size: 22px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p {
+	margin-bottom: 15px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p a {
+	color: #017FDD;
+	text-decoration: none;
+	font-weight: 500;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s ease;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p a:hover {
+	color: #0166B0;
+	border-bottom-color: #0166B0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p a:focus {
+	outline: 2px solid #017FDD;
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address {
+	background: #f8f9fa;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.3s ease;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title h3 {
+	margin: 0 0 5px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title .edit {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #017FDD;
+	text-decoration: none !important;
+	font-weight: 500;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title .edit:hover {
+	color: #0166B0;
+	text-decoration: underline !important;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address .woocommerce-Address-title .edit:hover {
+	text-decoration: underline !important;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content address {
+	font-style: normal;
+	line-height: 1.8;
+	color: #555;
+	margin: 0;
+	padding: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content address strong {
+	color: #333;
+	font-weight: 600;
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content address strong:first-child {
+	margin-top: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Addresses {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 25px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address {
+	margin-bottom: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address .woocommerce-Address-title .edit {
+	float: right;
+	margin-top: 0;
+}
+
+@media (max-width: 767px) {
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Addresses {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address {
+		padding: 20px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title .edit {
+		float: none;
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+/* Coupons Styling */
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons {
+	margin-bottom: 30px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons h2,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons h2 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e9ecef;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-item,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-item {
+	background: #f8f9fa;
+	border: 1px solid #e9ecef;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 15px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-item:hover,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-item:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-code,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-code {
+	font-size: 18px;
+	font-weight: 600;
+	color: #017FDD;
+	margin-bottom: 10px;
+	font-family: monospace;
+	letter-spacing: 1px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-code {
+	color: #666;
+	text-decoration: line-through;
+	opacity: 0.7;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-description,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-description {
+	color: #555;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-details,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-details {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #e9ecef;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-details span,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-details span {
+	font-size: 14px;
+	color: #666;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-details strong,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-details strong {
+	color: #333;
+	font-weight: 600;
+	margin-right: 5px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-expiry,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-expiry {
+	color: #d63384;
+	font-weight: 500;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-amount,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-amount {
+	color: #28a745;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-status,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-status {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-status.active {
+	background-color: #28a745;
+	color: #fff;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-status.expired,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-status {
+	background-color: #6c757d;
+	color: #fff;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table th,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table th,
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table td,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #e9ecef;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table th,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table th {
+	background-color: #f8f9fa;
+	font-weight: 600;
+	color: #333;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table tr:hover,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table tr:hover {
+	background-color: #f8f9fa;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .empty-coupons,
+.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .empty-coupons {
+	text-align: center;
+	padding: 40px 20px;
+	color: #666;
+	font-style: italic;
+}
+
+@media (max-width: 767px) {
+	.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-item,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-item {
+		padding: 15px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons .coupon-details,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons .coupon-details {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table {
+		font-size: 14px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table th,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table th,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-mycoupons table td,
+	.woocommerce-account .woocommerce-MyAccount-content .wt-used-coupons table td {
+		padding: 10px;
+	}
+}
+
+/* Form Styling */
+.woocommerce-account .woocommerce-MyAccount-content form {
+	margin-top: 20px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .form-row {
+	margin-bottom: 20px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #333;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content input[type="text"],
+.woocommerce-account .woocommerce-MyAccount-content input[type="email"],
+.woocommerce-account .woocommerce-MyAccount-content input[type="password"],
+.woocommerce-account .woocommerce-MyAccount-content input[type="tel"],
+.woocommerce-account .woocommerce-MyAccount-content textarea,
+.woocommerce-account .woocommerce-MyAccount-content select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	transition: border-color 0.3s ease;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content input[type="text"]:focus,
+.woocommerce-account .woocommerce-MyAccount-content input[type="email"]:focus,
+.woocommerce-account .woocommerce-MyAccount-content input[type="password"]:focus,
+.woocommerce-account .woocommerce-MyAccount-content input[type="tel"]:focus,
+.woocommerce-account .woocommerce-MyAccount-content textarea:focus,
+.woocommerce-account .woocommerce-MyAccount-content select:focus {
+	outline: none;
+	border-color: #017FDD;
+	box-shadow: 0 0 0 3px rgba(1, 127, 221, 0.1);
+}
+
+/* Button Styling */
+.woocommerce-account .woocommerce-MyAccount-content .button,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Button {
+	background-color: #017FDD;
+	color: #fff;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 4px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .button:hover,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Button:hover {
+	background-color: #0166B0;
+	color: #fff;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .button.alt {
+	background-color: #666;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .button.alt:hover {
+	background-color: #555;
+}
+
+/* Table Styling */
+.woocommerce-account .woocommerce-MyAccount-content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 32px !important;
+}
+
+@media (max-width: 767px) {
+	.woocommerce-account .woocommerce-MyAccount-content table {
+		margin-bottom: 20px !important;
+	}
+}
+
+.woocommerce-account .woocommerce-MyAccount-content table th,
+.woocommerce-account .woocommerce-MyAccount-content table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #e9ecef;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content table th {
+	background-color: #f8f9fa;
+	font-weight: 600;
+	color: #333;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content table tr:hover {
+	background-color: #f8f9fa;
+}
+
+/* Order Actions Cell Styling */
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions {
+	white-space: nowrap;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button {
+	display: inline-block;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	padding: 8px 16px;
+	font-size: 13px;
+	line-height: 1.4;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a:last-child,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button:last-child {
+	margin-right: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a + a,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button + .button,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a + .button,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button + a {
+	margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+	.woocommerce-account .woocommerce-MyAccount-content table td.woocommerce-orders-table__cell-order-actions,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions {
+		white-space: normal !important;
+		text-align: center !important;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content table td.woocommerce-orders-table__cell-order-actions[style],
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions[style] {
+		text-align: center !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content table td.woocommerce-orders-table__cell-order-actions > *,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions > * {
+		text-align: center !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a[style],
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button[style],
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button[style] {
+		display: flex !important;
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 8px !important;
+		text-align: center !important;
+		justify-content: center !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button.woocommerce-button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button[style],
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button.woocommerce-button[style] {
+		display: flex !important;
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 8px !important;
+		text-align: center !important;
+		justify-content: center !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button *,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button.woocommerce-button *,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a *,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button *,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button * {
+		text-align: center !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a:last-child,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button:last-child,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button:last-child,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions button:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a + a,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button + .button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a + .button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .button + a,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button + .woocommerce-button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions a + .woocommerce-button,
+	.woocommerce-account .woocommerce-MyAccount-content .woocommerce-orders-table__cell-order-actions .woocommerce-button + a {
+		margin-left: 0 !important;
+	}
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		width: 25%;
+		float: left;
+		margin-right: 5%;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content {
+		width: 70%;
+		float: left;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation::after,
+	.woocommerce-account .woocommerce-MyAccount-content::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		margin-bottom: 20px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content {
+		padding: 20px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation li a {
+		padding: 12px 15px;
+		font-size: 14px;
+	}
+}
+
+/* Clear floats */
+.woocommerce-account::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* WooCommerce table link spacing */
+.woocommerce table.shop_table td a:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+
+.xoo-el-form-container {
+	padding-bottom: 48px !important;
+
+	@media (max-width: 767px) {
+		padding-bottom: 24px !important;
+	}
+}

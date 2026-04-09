@@ -1,0 +1,30 @@
+/**
+ * Elementor Message Elements - Custom Styling
+ * Applies light green background with proper spacing
+ * Specifically targets messages inside elementor-form
+ */
+
+/* General Elementor message selectors */
+.elementor-message,
+.elementor-message.elementor-message-success,
+.elementor-form .elementor-message,
+.elementor-form .elementor-message.elementor-message-success {
+	background: #d4edda !important;
+	background-color: #d4edda !important;
+	margin-top: 16px !important;
+	padding: 8px !important;
+}
+
+/* Keep SVG and children transparent/neutral */
+.elementor-message .elementor-message-svg,
+.elementor-message .elementor-message-svg *,
+.elementor-message-svg,
+.elementor-message-svg *,
+.elementor-form .elementor-message .elementor-message-svg,
+.elementor-form .elementor-message .elementor-message-svg *,
+.elementor-form .elementor-message-svg,
+.elementor-form .elementor-message-svg * {
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+}
